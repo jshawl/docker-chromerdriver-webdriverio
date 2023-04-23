@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag wdio:$GITHUB_SHA
     - name: Run the test suite
-      run: docker run --rm -it wdio:$GITHUB_SHA
+      run: docker run --rm -t wdio:$GITHUB_SHA
